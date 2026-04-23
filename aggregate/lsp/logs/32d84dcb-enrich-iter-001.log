@@ -1,0 +1,21 @@
+[2026-04-23T05:55:03Z] === ENRICH ITERATION 1 START | repo=eyre-rs/eyre sha=32d84dcb ===
+[2026-04-23T05:55:03Z] [iter=1] PHASE START: enrich repo=eyre-rs/eyre sha=32d84dcb runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/32d84dcb-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/32d84dcbacf607d7c6e1050b54d585622c8de4fc.nq.gz
+[2026-04-23T05:55:03Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-23T05:55:05Z] [iter=1] AST store loaded triples=159615 load_secs=1 mem_mb=306 MB
+[2026-04-23T05:55:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=306 MB
+[2026-04-23T05:55:05Z] [iter=1] LSP targets found call_sites=1015 imports=87 extends=0 implements=165 secs=0
+[2026-04-23T05:55:05Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=306 MB
+[2026-04-23T05:55:06Z] [iter=1] Position index built positions=11373 nodes_with_types=13054 secs=1 mem_mb=306 MB
+[2026-04-23T05:55:06Z] [iter=1] Step 3: Starting LSP resolution mem_mb=306 MB already_completed_types=[] already_completed_files=0
+[2026-04-23T05:55:06Z] [iter=1] Resolving target type target_type=call_site count=1015
+[2026-04-23T05:55:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=47 errors=29 current=eyre/src/context.rs
+[2026-04-23T05:56:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=18 resolved=429 errors=388 current=eyre/tests/test_repr.rs
+[2026-04-23T05:56:19Z] [iter=1] Target type resolved target_type=call_site resolved=497 errors=465 secs=73 mem_mb=306 MB
+[2026-04-23T05:56:19Z] [iter=1] Resolving target type target_type=import_statement count=87
+[2026-04-23T05:56:41Z] [iter=1] Target type resolved target_type=import_statement resolved=86 errors=0 secs=22 mem_mb=306 MB
+[2026-04-23T05:56:41Z] [iter=1] Resolving target type target_type=implements_clause count=165
+[2026-04-23T05:56:50Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=eyre/src/kind.rs
+[2026-04-23T05:57:01Z] [iter=1] Target type resolved target_type=implements_clause resolved=165 errors=0 secs=20 mem_mb=306 MB
+[2026-04-23T05:57:21Z] [iter=1] Step 5: Writing final enrichment file triples=10280
+[2026-04-23T05:57:21Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/32d84dcbacf607d7c6e1050b54d585622c8de4fc.nq.gz size_kb=183
+[2026-04-23T05:57:21Z] [iter=1] PHASE END: enrich elapsed_s=138 elapsed_min=2.3 total_triples=10280
