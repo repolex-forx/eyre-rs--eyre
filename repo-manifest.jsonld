@@ -99,8 +99,9 @@
     {
       "@id": "https://repolex.ai/r/eyre-rs/eyre/commit/b6075394bcaaa8cc311321239f8964099bb02a88",
       "git:hexsha": "b6075394bcaaa8cc311321239f8964099bb02a88",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v0.6.8"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v0.6.8",
+      "repolex:parsedAt": "2026-05-08T19:08:34.204721+00:00"
     }
   ]
 }
